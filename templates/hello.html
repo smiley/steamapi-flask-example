@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+  <body>
+    <title>Hello there!</title>
+    {% if name %}
+      <h1>Hello {% if img %}<img src="{{ img }}" /> {% endif %}{{ name }}!</h1>
+    {% else %}
+      <h1>Hello Anonymous!</h1>
+    {% endif %}
+    {% if content %}
+      <p>{{ content }}</p>
+    {% endif %}
+  </body>
+</html>
